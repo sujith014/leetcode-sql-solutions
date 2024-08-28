@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 select 
-left(trans_date,7)  'month',
+DATE_FORMAT(trans_date, "%Y-%m")  'month',
 country,
 count(amount) 'trans_count',
 sum(if(state = 'approved',1,0)) 'approved_count',
