@@ -1,4 +1,4 @@
-// T.c = 0(N) , S.c = 0(1)
+// T.c = 0(N) , S.c = 0(N)
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         int size = nums.length;
