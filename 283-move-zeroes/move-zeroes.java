@@ -5,9 +5,9 @@ class Solution {
             if(nums[i] == 0){
                 countZeroes++;
             }else {
-                    int temp = nums[i]; //  non - zero number
-                    nums[i] = 0 ;
-                    nums[i-countZeroes] = temp ;
+                int temp = nums[i]; //  non - zero number
+                nums[i] = 0 ;
+                nums[i-countZeroes] = temp ;
             }
             
         }
