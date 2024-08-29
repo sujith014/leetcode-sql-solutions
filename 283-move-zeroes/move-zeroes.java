@@ -5,12 +5,11 @@ class Solution {
             if(nums[i] == 0){
                 countZeroes++;
             }else {
-                int temp = nums[i]; //  non - zero number
-                nums[i] = 0 ;
-                nums[i-countZeroes] = temp ;
+                nums[i-countZeroes] = nums[i]; //  non - zero number
+                if(countZeroes > 0)
+                    nums[i] = 0 ;
             }
             
         }
-   
     }
 }
